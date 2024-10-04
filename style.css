@@ -1,0 +1,148 @@
+*{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      font-family: "Oswald", sans-serif;
+    }
+    @media screen and (max-width: 600px){
+      .header-main{
+        background-color: rgba(93,118,203);
+        position: relative;
+      }
+      .header-main .header-con{
+        display: none
+      }
+      img{
+        display: inline;
+        padding: 10px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+      }
+      #menu-bar:checked ~ .header-con{
+        display: block;
+      }
+      header{
+        padding: 20px;
+        padding-top: 0;
+      }
+      header > a{
+        margin-bottom: 15px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 15px;
+        text-align: center;
+        display: block;
+        color: white;
+        text-decoration: none;
+        background-color: black;
+      }
+      header > a:hover{
+        background-color: tomato;
+      }
+      .contact-us{
+        background-color: black;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      .contact-us-main{
+        display: none;
+        
+      }
+      .contact-us a:hover{
+        background-color: tomato;
+      }
+      .contact-us:hover .contact-us-main{
+        display: block;
+      }
+      .contact-us > a, .contact-us-main > a{
+        text-decoration: none;
+        color: white;
+      }
+      .contact-us > a{
+        display: block;
+        padding: 15px;
+      }
+      .contact-us > a:hover{
+        border-radius: 5px 5px 0 0;
+      }
+      .contact-us-main a{
+        display: block;
+        padding: 15px;
+      }
+      .contact-us-main a:last-child:hover{
+        border-radius: 0 0 5px 5px;
+      }
+      #menu-bar{
+        display: none;
+      }
+      .header-main label{
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        padding: 0 10px 5px 10px;
+      }
+      #menu-bar:checked ~ label{
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+    }
+    @media screen and (min-width: 600px){
+      .header-main{
+        background-color: rgba(93,118,203);
+        position: relative;
+      }
+      #menu-bar, label{
+        display: none;
+      }
+      .header-con{
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+      .header-con a{
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+      }
+      .header-con > a{
+        display: inline;
+        text-decoration: none;
+        color: white;
+        height: 100%;
+        border-radius: 5px;
+      }
+      .contact-us{
+        display: inline;
+      }
+      .contact-us-main {
+        background-color: rgba(93,118,203);
+        position: absolute;
+        top: 74px;
+        right: 105px;
+        width: 120px;
+      }
+      .contact-us-main > a{
+        display: block;
+        text-align: center;
+      }
+      .contact-us-main{
+        display: none;
+      }
+      .contact-us:hover .contact-us-main{
+        display: block;
+      }
+      header a:hover{
+        background-color: tomato;
+      }
+      img{
+        padding: 5px;
+      }
+      header{
+        margin-top: 8px;
+      }
+    }
